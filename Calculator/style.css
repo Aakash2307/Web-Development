@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  background-color: #d3d3d3;
+  padding: 120px 10px 50px 60px;
+}
+
+.cal {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+  border-color: black;
+  justify-content: center;
+}
+
+.display {
+  color: #707070;
+  font-size: 5em;
+  text-align: right;
+  padding: 20px;
+  height: 80px;
+  border-bottom: 5px black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.equal {
+  background-color: #d00000;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #707070;
+}
+
