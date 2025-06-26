@@ -1,0 +1,116 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    /* background-color: darkgoldenrod; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+}
+
+.wrapper{
+    background-color: white;
+    width: 770px;
+    /* height: 400px; */
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    
+
+}
+
+.wrapper .content-box{
+    padding: 13px 20px 0;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+
+   
+}
+
+.content-box .content{
+    margin-top: 17px;
+    display: flex;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px #ccc;
+}
+
+.content-box .result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+
+}
+
+.result li{
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+
+}
+
+.content button{
+    outline : none;
+    border: none;
+    background: orange;
+    padding: 8px 15px;
+    color: white ;
+    /* border-radius: 25px; */
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.content button:active{
+    /* border-radius: 25px; */
+    transform: scale(0.97);  /* scale down the button when clicked */
+
+
+}
+
+.type-text p span{
+    position: relative;
+}
+
+.type-text p span :active{
+    color: orange;
+
+}
+
+.type-text p span.correct{
+    color: green;
+}
+
+.type-text p span.incorrect{
+    color: red;
+    outline: 1px solid #fff;
+    border-radius: 5px;
+    background: #ffc0cb;
+}
+
+::selection{
+    color: #fff;
+    background: orange;
+}
+
+.wrapper .input-field{
+    padding: 13px 20px 0;
+    position : absolute;
+    opacity: 0;
+    z-index: -99;
+}
+
