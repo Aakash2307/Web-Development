@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick Sign Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Controls -->
+    <div class="form-control">
+      <div class="colorpicker">
+        <div class="txt">Text color picker</div>
+        <input type="color" class="color" id="text-color-picker" value="#000000" />
+      </div>
+
+      <div class="background">
+        <div class="txt">Background</div>
+        <input type="color" class="color" id="background-color-picker" value="#ffffff" />
+      </div>
+
+      <div class="fontsize">
+        <div class="txt">Font size</div>
+        <select id="font-size-picker">
+          <option value="5">5px</option>
+          <option value="10" selected>10px</option>
+          <option value="15">15px</option>
+          <option value="20">20px</option>
+          <option value="25">25px</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Drawing Area -->
+    <canvas id="signature-pad" width="800" height="400"></canvas>
+
+    <!-- Buttons -->
+    <div class="button-control">
+      <button id="clear-btn" class="clear">Clear</button>
+      <button id="save-btn" class="save">Save & download</button>
+      <button id="retrieve-btn" class="signature">Retrieve saved signature</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
